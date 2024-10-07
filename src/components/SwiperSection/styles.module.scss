@@ -1,0 +1,105 @@
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.swiperContainer {
+	width: 100%;
+	padding-left: 200px;
+}
+
+.swiperSlide {
+	background-color: var(--white);
+	padding: 25px 15px;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 25px;
+	width: 815px;
+	border-radius: 16px;
+	border: 1px solid var(--gray);
+	margin-bottom: 44px;
+
+	span {
+		font-family: var(--font-family-second), serif;
+		font-size: 22px;
+		font-weight: 700;
+		text-align: left;
+		display: block;
+		width: 100%;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: #EFEFEF;
+			margin-bottom: 10px;
+			bottom: 0;
+		}
+	}
+
+	img {
+	}
+
+	a {
+		display: block;
+		color: var(--green);
+		text-decoration: underline;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: left;
+
+	}
+}
+
+
+.mySwiper2 {
+	width: 100%;
+}
+
+.swiperPaginationBulletActive {
+	width: 16px;
+	height: 16px;
+	transition: width 0.5s;
+	border-radius: 50%;
+	background: var(--black) !important;
+	z-index: 20;
+}
+
+.swiperPaginationBullet {
+	width: 16px;
+	height: 16px;
+	background: #F6E6FD;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 20;
+}
+
+.horizontalClass {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	top: 50px;
+	position: absolute;
+	z-index: 20;
+}
+
+.iconRotate {
+	transform: rotate(180deg);
+}
+
+.button {
+	padding: 8px;
+	display: flex;
+	justify-content: center;
+	background-color: var(--black);
+	color: var(--white);
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+}
+
+.buttonRight {
+	right: 0;
+}
