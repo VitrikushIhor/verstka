@@ -10,6 +10,10 @@
 	align-items: center;
 	z-index: 100;
 	background: rgba(00, 00, 00, 0.9);
+	@media screen and (max-width: 720px) {
+		padding: 0 20px;
+
+	}
 }
 
 .wrapper {

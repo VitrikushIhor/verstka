@@ -16,6 +16,27 @@
 	justify-content: center;
 	gap: 32px;
 
+	@media screen and (max-width: 560px) {
+		flex-direction: column;
+	}
+
+	li {
+		color: var(--white);
+	}
+}
+
+.footerIcons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+
+	@media screen and (max-width: 560px) {
+		flex-wrap: wrap;
+		gap: 20px;
+
+	}
+
 	li {
 		color: var(--white);
 	}

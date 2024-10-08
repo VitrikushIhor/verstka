@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 import Logo from '../Logo/Logo.tsx';
-import {headerLinks} from '../Header/Header.tsx';
+import {handleScrollToProducts, headerLinks} from '../Header/Header.tsx';
 import {Instagram} from 'lucide-react';
 
 
@@ -10,10 +10,14 @@ export default function Footer() {
 			 <Logo/>
 			 <ul className={styles.footerLinks}>
 				 {headerLinks.map((link) => (
-						<li key={crypto.randomUUID()}> {link.title} </li>
+						<li key={crypto.randomUUID()}>
+							<a onClick={(e) => handleScrollToProducts(e)} href={`#${link.url}`}>
+								{link.title}
+							</a>
+						</li>
 				 ))}
 			 </ul>
-			 <ul className={styles.footerLinks}>
+			 <ul className={`${styles.footerIcons}`}>
 				 {headerLinks.map(() => (
 						<li key={crypto.randomUUID()}><Instagram/></li>
 				 ))}

@@ -1,0 +1,25 @@
+.actions {
+
+}
+
+.auth {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: var(--font-family-source-sans-3), serif;
+
+	.line {
+		width: 1px;
+		height: 37px;
+		background-color: var(--black);
+	}
+
+	a {
+		color: var(--black);
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 21px;
+		text-decoration: underline var(--black);
+
+	}
+}

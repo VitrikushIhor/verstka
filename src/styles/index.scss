@@ -1,3 +1,8 @@
 @import "reset";
 @import "fonts";
 @import "variables";
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+}

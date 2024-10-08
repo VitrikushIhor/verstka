@@ -1,0 +1,47 @@
+.container {
+	display: none;
+	@media only screen and (max-width: 1350px) {
+		display: block;
+	}
+}
+
+
+.opened {
+	@media only screen and (max-width: 1350px) {
+		width: fit-content;
+	}
+}
+
+.icons_item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+}
+
+.burgerMenu {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	width: 100%;
+	background-color: var(--blue);
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	transition: 0.3s ease-in-out, visibility 0.3s, opacity 0.3s;
+	visibility: hidden;
+	opacity: 0;
+	padding: 20px;
+	gap: 15px;
+	align-items: center;
+}
+
+.burgerMenuOpen {
+	transform: translate(-50%, 0);
+	visibility: visible;
+	opacity: 1;
+}
+
+.item {
+}
